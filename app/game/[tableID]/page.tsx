@@ -36,15 +36,6 @@
     return (
       <>
         <AvatarCarousel users={users}/>
-        <div style={{ position: 'absolute', bottom: '20vh', }}>
-          <Button onClick={()=> inc()}>
-            +++
-          </Button>
-          <Button onClick={()=> dec()}>
-            ---
-          </Button>
-        </div>
-  
       </>
     );
   };
