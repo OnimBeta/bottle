@@ -18,14 +18,14 @@ const SpinningBottle: FC<ISpinningBottleProps> = ({ className = '', selectedBott
   
   const [selectedSkin, setSelectedSkin] = useState<string>('')
   
-  const availableSkins = [vodka, beer, wine, water, cola]
   
   useEffect(() => {
+    const availableSkins = [vodka, beer, wine, water, cola]
     const randomID = Math.floor(Math.random() * availableSkins.length)
     const selectedSkinID = selectedBottleID || randomID
     const selectedSkin = availableSkins[selectedSkinID]
     setSelectedSkin(selectedSkin)
-  },[])
+  },[selectedBottleID])
   
   if (!selectedSkin || isSelected) {
     return null
