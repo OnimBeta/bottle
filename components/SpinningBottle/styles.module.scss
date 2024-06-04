@@ -1,0 +1,34 @@
+.wrapper {
+
+}
+
+.bottle {
+  animation: animationRotation 2s linear infinite;
+
+  position: absolute;
+  max-height: 20vh;
+  width: fit-content;
+
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  top: 50%;
+  left: 50%;
+
+  animation-name: animationRotation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  //animation-direction: normal;
+  //animation-play-state: paused;
+}
+
+
+@keyframes animationRotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

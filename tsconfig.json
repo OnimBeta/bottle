@@ -18,7 +18,12 @@
       }
     ],
     "paths": {
-      "@/components/*": ["./*"]
+      "@/components/*": ["./components/*"],
+      "@/icons/*": ["./public/icons/*"],
+      "@/buttons/*": ["./public/buttons/*"],
+      "@/backgrounds/*": ["./public/backgrounds/*"],
+      "@/constants/*": ["./constants/*"],
+      "@/skins/*": ["./public/bottleSkins/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
