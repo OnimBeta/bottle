@@ -76,16 +76,6 @@ const AvatarCarouselItem: FC<IAvatarCarouselItemProps> = ({
         height={size}
         style={{ transform: `rotate(${-angle}deg)`}}
       />
-      {isSelected && (
-        <div className={styles.arrow} style={{ transform: `rotate(${angle}deg)`}}>
-          {isMatch ? (
-            <Image src={greenArrow} alt='green arrow'/>
-          ) : (
-            <Image src={redArrow} alt='red arrow' />
-          )}
-        </div>
-        )
-      }
     </li>
   );
 };
